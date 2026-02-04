@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gift-suggestor.vercel.app/sitemap.xml

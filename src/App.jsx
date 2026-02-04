@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { Gift, ArrowRight, RefreshCw, Star, Heart, Camera, Palette, Zap, ShoppingBag, Car, BookOpen, PenTool } from 'lucide-react'
+import { Gift, ArrowRight, RefreshCw, Star, Zap } from 'lucide-react'
 import questionsData from './data/questions.json'
 
 // THE AI GENERATIVE ENGINE
 // This replaces the static gifts.json and generates logic-driven suggestions on the fly
 const generateAiSuggestions = (answers) => {
-  const { recipient, occasion, budget, interest, vibe } = answers;
+  const { recipient, budget } = answers;
 
   // Logical Budget mapping: low (<1000), medium (1000-5000), high (>5000)
   const productDatabase = {
@@ -218,7 +218,7 @@ function App() {
 
                     <div className="results-grid">
                       {results.map((gift, idx) => (
-                        <div key={gift.id} className="cartoon-card" style={{ position: 'relative' }}>
+                        <div key={idx} className="cartoon-card" style={{ position: 'relative' }}>
                           <div className="emoji-sticker">
                             <span className="gift-emoji">🎁</span>
                             <span className="ribbon-emoji">🎀</span>
