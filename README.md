@@ -1,16 +1,87 @@
-# React + Vite
+# 🎁 Giftify AI v2.0 – Cartoon Edition
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Lovers Week Special](https://img.shields.io/badge/February-Lovers%20Week%20Edition-FF6B6B?style=for-the-badge&logo=heartshare&logoColor=white)](https://github.com/Sardar-Sadiq/Gift-Suggestor)
+[![Tech Stack](https://img.shields.io/badge/Stack-React%20%2B%20GSAP-FFD93D?style=for-the-badge)](https://github.com/Sardar-Sadiq/Gift-Suggestor)
 
-Currently, two official plugins are available:
+**Giftify AI** is a generative, logic-driven gift suggestor designed to eliminate decision fatigue with style. Built with a vibrant "Cartoon Neubrutalist" aesthetic, it leverages an internal matching engine to recommend perfect presents for boys, girls, and everyone in between.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🧠 Generative AI Matching Engine
+No more outdated static lists! The app uses a rules-based generative engine to curate suggestions in real-time based on:
+- **Recipient Personality** (Techie, Gamer, Artist, Romantic)
+- **Occasion Context** (Lovers Week, Birthdays, Anniversaries)
+- **Vibe Tracking** (Practical vs. Quirky)
+- **Budget Logic** (Economical to Premium)
 
-## Expanding the ESLint configuration
+### 🎨 Premium Cartoon UI (Neubrutalism)
+- **High-Contrast Design**: Bold black outlines and vibrant "Pop" colors.
+- **GSAP Transitions**: Fluid, bouncy page transitions that feel like a high-end cartoon.
+- **Responsive Layout**: Optimized for both mobile "quick-matches" and desktop browsing.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛒 Smart Shopping Integration
+- **100% Link Reliability**: Uses automated Search-Redirects for Amazon India and Flipkart.
+- **Real-Time Price Checks**: Simulated AI price comparison across multiple platforms.
+- **Smart Fallbacks**: Integrated error handling for product imagery to ensure a beautiful experience, always.
+
+### 💖 Lovers Week Special (Feb 7-14)
+Deeply integrated tracks for Rose Day, Propose Day, Teddy Day, and the big Valentine's finale.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React](https://reactjs.org/)
+- **Animations**: [GSAP (GreenSock)](https://greensock.com/) & [Lucide React](https://lucide.dev/)
+- **Styling**: Custom CSS3 (Neubrutalist Design System)
+- **Data Architecture**: Logic-driven JSON processing (Generative approach)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- npm or bun
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sardar-Sadiq/Gift-Suggestor.git
+   ```
+
+2. Navigate to the directory:
+   ```bash
+   cd Gift-Suggestor
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📸 Preview Logic
+
+The app dynamically matches gender and interests:
+- **For Boys**: High-performance Hot Wheels collector packs, RC gadgets, and retro gaming tech.
+- **For Girls**: Professional art markers, Instax cameras, and aesthetic DIY journaling kits.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have ideas for new "Vibe" categories or better matching logic, feel free to open a PR.
+
+**Made with 💖 by [Sadiq](https://github.com/Sardar-Sadiq)**
