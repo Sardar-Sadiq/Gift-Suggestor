@@ -8,95 +8,70 @@ import questionsData from './data/questions.json'
 const generateAiSuggestions = (answers) => {
   const { recipient, occasion, budget, interest, vibe } = answers;
 
-  // Base knowledge for the AI
+  // Logical Budget mapping: low (<1000), medium (1000-5000), high (>5000)
   const productDatabase = {
-    tech: {
-      male: [
-        { title: "RC Stunt Drone with Camera", desc: "High-speed mini drone with 4K recording and 360 flips.", price: "₹2,499", id: "B09V7N7Z1H" },
-        { title: "Mechanical Keyboard (RGB)", desc: "Tactile blue switches with customizable light modes.", price: "₹3,999", id: "B0B5L7N6WS" },
-        { title: "Portable Retro Console", desc: "400-in-1 classic arcade games for gaming on the go.", price: "₹899", id: "B08G718C9H" }
-      ],
-      female: [
-        { title: "Instax Mini 12 Instant Camera", desc: "Cute instant film camera for capturing live memories.", price: "₹6,999", id: "B0BZ7D7G1N" },
-        { title: "Smart Ambient Mood lamp", desc: "App-controlled LED lamp with 16M colors and music sync.", price: "₹1,499", id: "B09V7N7Z1H" },
-        { title: "Wireless Noise-Canceling Buds", desc: "Crystal clear sound with ergonomic design for deep focus.", price: "₹2,999", id: "B0B5L7N6WS" }
-      ]
-    },
-    creative: {
-      male: [
-        { title: "3D Pen Printing Kit", desc: "Create 3D art from thin air with this precision pen.", price: "₹1,299", id: "B09V7N7Z1H" },
-        { title: "Graphite Sketching Set", desc: "Professional grade drawing pencils and charcoal for artists.", price: "₹699", id: "B08G718C9H" }
-      ],
-      female: [
-        { title: "Professional 80-Marker Set", desc: "Dual-tip alcohol markers for vibrant sketching and art.", price: "₹1,850", id: "B08HMRMM1D" },
-        { title: "Watercolor Palette & Brushes", desc: "Premium pigment cakes with self-moistening brushes.", price: "₹999", id: "B0B5L7N6WS" },
-        { title: "DIY Journaling & Sticker Box", desc: "Everything needed for aesthetic scrapbooking and memories.", price: "₹799", id: "B09V7N7Z1H" }
-      ]
-    },
-    gamer: {
-      male: [
-        { title: "Hot Wheels 5-Car Collector Pack", desc: "Authentic 1:64 scale die-cast cars for collectors.", price: "₹649", id: "B08G718C9H" },
-        { title: "Gaming Mouse with Macro Keys", desc: "High-DPI precision mouse with custom RGB lighting.", price: "₹1,200", id: "B0B5L7N6WS" },
-        { title: "Level Up Mug (Controller Handle)", desc: "Ceramic mug with a cool gaming controller grip.", price: "₹450", id: "B08G718C9H" }
-      ],
-      female: [
-        { title: "Pastel Custom Joy-Con Skins", desc: "Soft-touch custom skins for her gaming setup.", price: "₹599", id: "B09V7N7Z1H" },
-        { title: "Aesthetic Gaming Headset", desc: "High-fidelity audio with cat-ear RGB attachments.", price: "₹4,500", id: "B0B5L7N6WS" }
-      ]
-    },
-    luxury: {
-      any: [
-        { title: "Lindt Swiss Luxury Box", desc: "Exquisite heart-shaped box of melting chocolate truffles.", price: "₹850", id: "B00B9G6HTI" },
-        { title: "Premium Red Roses Bouquet", desc: "10-stem long-life roses in a luxury ceramic vase.", price: "₹1,499", id: "fnp-roses" }
-      ],
-      female: [
-        { title: "Aromatherapy Diffuser Kit", desc: "Ultrasonic diffuser with 10 essential oil scents.", price: "₹1,899", id: "B09V7N7Z1H" }
-      ]
-    }
+    tech: [
+      { title: "Portable Retro Console", desc: "400-in-1 classic arcade games for gaming on the go.", price: "₹899", budget: "low", gender: "male" },
+      { title: "Smart Ambient Mood lamp", desc: "App-controlled LED lamp with 16M colors.", price: "₹1,499", budget: "medium", gender: "female" },
+      { title: "RC Stunt Drone with Camera", desc: "High-speed mini drone with 4K recording.", price: "₹2,499", budget: "medium", gender: "male" },
+      { title: "Mechanical Keyboard (RGB)", desc: "Tactile blue switches with customizable light modes.", price: "₹3,999", budget: "medium", gender: "male" },
+      { title: "Instax Mini 12 Instant Camera", desc: "Cute instant film camera for live memories.", price: "₹6,999", budget: "high", gender: "female" },
+      { title: "Wireless Noise-Canceling Buds", desc: "Crystal clear sound with ergonomic design.", price: "₹2,999", budget: "medium", gender: "female" }
+    ],
+    creative: [
+      { title: "Draw-Everything Sketchbook", desc: "Premium 200-page acid-free paper for artists.", price: "₹450", budget: "low", gender: "any" },
+      { title: "3D Pen Printing Kit", desc: "Create 3D art from thin air with precision.", price: "₹1,299", budget: "medium", gender: "male" },
+      { title: "Graphite Sketching Set", desc: "Professional grade drawing pencils.", price: "₹699", budget: "low", gender: "male" },
+      { title: "Professional 80-Marker Set", desc: "Dual-tip alcohol markers for vibrant sketching.", price: "₹1,850", budget: "medium", gender: "female" },
+      { title: "Watercolor Palette & Brushes", desc: "Premium pigment cakes with self-moistening brushes.", price: "₹999", budget: "low", gender: "female" },
+      { title: "DIY Journaling & Sticker Box", desc: "Aesthetic scrapbooking and memories.", price: "₹799", budget: "low", gender: "female" }
+    ],
+    gamer: [
+      { title: "Hot Wheels 5-Car Pack", desc: "Authentic 1:64 scale die-cast cars.", price: "₹649", budget: "low", gender: "male" },
+      { title: "Level Up Mug (Controller Handle)", desc: "Ceramic mug with a gaming controller grip.", price: "₹450", budget: "low", gender: "any" },
+      { title: "Gaming Mouse (RGB)", desc: "High-DPI precision mouse with custom lighting.", price: "₹1,200", budget: "medium", gender: "male" },
+      { title: "Pastel Custom Joy-Con Skins", desc: "Soft-touch custom skins for her setup.", price: "₹599", budget: "low", gender: "female" },
+      { title: "Aesthetic Gaming Headset", desc: "High-fidelity audio with RGB attachments.", price: "₹4,500", budget: "medium", gender: "female" }
+    ],
+    luxury: [
+      { title: "Lindt Swiss Luxury Box", desc: "Exquisite heart-shaped box of melting truffles.", price: "₹850", budget: "low", gender: "any" },
+      { title: "Premium Red Roses Bouquet", desc: "10-stem long-life roses in a luxury vase.", price: "₹1,499", budget: "medium", gender: "female" },
+      { title: "Aromatherapy Diffuser Kit", desc: "Ultrasonic diffuser with 10 essential oils.", price: "₹1,899", budget: "medium", gender: "female" },
+      { title: "Gold Plated Pendant", desc: "Elegant heart-shaped minimal jewelry.", price: "₹5,500", budget: "high", gender: "female" }
+    ]
   }
 
-  // AI Matching Logic
-  let cat = interest === 'reader' ? 'creative' : interest;
-  let genderKey = recipient === 'male' || recipient === 'female' ? recipient : 'female';
+  // 1. POOL EVERYTHING
+  let fullPool = [];
+  Object.values(productDatabase).forEach(categoryItems => {
+    fullPool = [...fullPool, ...categoryItems];
+  });
 
-  let pool = [...(productDatabase[cat]?.[genderKey] || []), ...(productDatabase.luxury.any)];
+  // 2. STRICT BUDGET FILTERING (Crucial Fix)
+  let filteredPool = fullPool.filter(item => item.budget === budget);
 
-  // Refine by vibe
-  if (vibe === 'romantic') pool = [...pool, ...productDatabase.luxury.any];
+  // 3. GENDER & INTEREST REFINEMENT
+  let genderFiltered = filteredPool.filter(item =>
+    item.gender === recipient || item.gender === 'any'
+  );
 
-  // Randomize and select top 3
-  return pool
+  // If gender filtering is too strict, fallback to budget-only pool
+  if (genderFiltered.length < 2) genderFiltered = filteredPool;
+
+  // 4. RANDOMIZE AND MAP
+  return genderFiltered
     .sort(() => Math.random() - 0.5)
     .slice(0, 3)
     .map(item => ({
       ...item,
-      category: interest.toUpperCase(),
-      why: `Matches the ${interest} interest and ${vibe} vibe perfectly!`,
-      imageUrl: `https://images.unsplash.com/photo-${getUnsplashId(item.title)}?auto=format&fit=crop&w=600&q=80`,
-      score: 95 + Math.floor(Math.random() * 5), // High AI match score
+      category: item.budget.toUpperCase() + " BUDGET",
+      why: `Fits your ${budget} budget and matches their personality perfectly!`,
+      score: 98,
       platforms: [
         { name: "Amazon India", price: item.price, link: `https://www.amazon.in/s?k=${encodeURIComponent(item.title)}` },
-        { name: "Flipkart", price: `₹${parseInt(item.price.replace(/[^\d]/g, '')) - 50}`, link: `https://www.flipkart.com/search?q=${encodeURIComponent(item.title)}` }
+        { name: "Flipkart", price: `₹${parseInt(item.price.replace(/[^\d]/g, '')) - 40}`, link: `https://www.flipkart.com/search?q=${encodeURIComponent(item.title)}` }
       ]
     }));
-};
-
-const getUnsplashId = (title) => {
-  if (title.includes('Drone')) return '1508614589041-396be394014d';
-  if (title.includes('Keyboard')) return '1511467687858-23d96c32e4ae';
-  if (title.includes('Console')) return '1527219525722-f9767a7f28f4';
-  if (title.includes('Camera')) return '1526170315830-ef18a6739032';
-  if (title.includes('Lamp')) return '1534073828943-f801091bb18c';
-  if (title.includes('Buds')) return '1505740420928-5e560c06d30e';
-  if (title.includes('Pen')) return '1511300636408-a63a89df3482';
-  if (title.includes('Sketching')) return '1513364776144-60967b0f800f';
-  if (title.includes('Marker')) return '1511108690759-009324a903df';
-  if (title.includes('Watercolor')) return '1541339907198-e08756ebafe1';
-  if (title.includes('Journaling')) return '1531058285117-562a3b2b467e';
-  if (title.includes('Hot Wheels')) return '1594731802114-2503d5b4c8d9';
-  if (title.includes('Rose')) return '1582794543139-8ac9cb0f7b11';
-  if (title.includes('Chocolate')) return '1549007994-cb92caebd54b';
-  return '1513151233558-d860c5398176';
 };
 
 function App() {
@@ -241,28 +216,12 @@ function App() {
                       <h2 style={{ fontSize: '4rem', lineHeight: 1 }}>LOOK WHAT <br /><span style={{ color: 'var(--secondary)' }}>WE FOUND!</span></h2>
                     </div>
 
-                    <div className="results-grid" style={{
-                      display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                      gap: '2.5rem',
-                      width: '100%'
-                    }}>
+                    <div className="results-grid">
                       {results.map((gift, idx) => (
                         <div key={gift.id} className="cartoon-card" style={{ position: 'relative' }}>
                           <div className="match-percentage">
                             {Math.round((gift.score / 15) * 100)}%
                           </div>
-                          <div className="gift-image-container">
-                            <img
-                              src={gift.imageUrl}
-                              alt={gift.title}
-                              onError={(e) => {
-                                e.target.onerror = null;
-                                e.target.src = "https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80"; // Fallback to a nice gift wrapping photo
-                              }}
-                            />
-                          </div>
-
                           <div style={{ marginBottom: '1.5rem' }}>
                             <span className="badge-tag" style={{ background: '#E3F2FD' }}>{gift.category}</span>
                             <h3 style={{ fontSize: '1.8rem', marginTop: '0.5rem' }}>{gift.title}</h3>
