@@ -8,7 +8,7 @@ const Header = ({ onLogoClick }) => {
                 <div style={{ background: 'var(--primary)', padding: '10px', borderRadius: '15px', border: '3px solid black' }}>
                     <Gift size={32} />
                 </div>
-                <span>GIFTIFY <span style={{ fontSize: '0.8rem', opacity: 0.7 }}>CARTOON AI</span></span>
+                <span>GIFTIFY <span style={{ fontSize: '0.8rem', opacity: 0.7 }}>AI</span></span>
             </div>
         </header>
     )
