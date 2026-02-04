@@ -222,19 +222,46 @@ header {
   margin-top: 0.5rem;
 }
 
-.match-percentage {
+.emoji-sticker {
   position: absolute;
-  top: -15px;
-  right: -15px;
-  background: var(--secondary);
-  color: white;
-  border: 3px solid var(--border);
-  padding: 10px;
-  border-radius: 50%;
-  font-weight: 900;
-  font-size: 1rem;
+  top: -40px;
+  right: -30px;
+  font-size: 4.5rem;
+  z-index: 10;
   transform: rotate(15deg);
-  box-shadow: 4px 4px 0px var(--border);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ribbon-emoji {
+  display: none;
+}
+
+.cartoon-card:hover .gift-emoji {
+  display: none;
+}
+
+.cartoon-card:hover .ribbon-emoji {
+  display: block;
+  animation: bouncePop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bouncePop {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+
+  70% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .price-box {
@@ -295,6 +322,57 @@ footer {
 /* GSAP Specific containers */
 .page-wrapper {
   opacity: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Base card doesn't float on landing to keep it stable */
+.cartoon-card {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Floating only applied to the result cards */
+.results-grid .cartoon-card {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Staggered delays for the 3-column row */
+.results-grid .cartoon-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.results-grid .cartoon-card:nth-child(2) {
+  animation-delay: 0s;
+}
+
+/* Keeping them uniform but capable of stagger */
+.results-grid .cartoon-card:nth-child(3) {
+  animation-delay: 0s;
+}
+
+/* Let's actually give them a slight stagger for the "wave" effect */
+.results-grid .cartoon-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.results-grid .cartoon-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.results-grid .cartoon-card:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
 @media (max-width: 640px) {

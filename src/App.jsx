@@ -219,8 +219,9 @@ function App() {
                     <div className="results-grid">
                       {results.map((gift, idx) => (
                         <div key={gift.id} className="cartoon-card" style={{ position: 'relative' }}>
-                          <div className="match-percentage">
-                            {Math.round((gift.score / 15) * 100)}%
+                          <div className="emoji-sticker">
+                            <span className="gift-emoji">🎁</span>
+                            <span className="ribbon-emoji">🎀</span>
                           </div>
                           <div style={{ marginBottom: '1.5rem' }}>
                             <span className="badge-tag" style={{ background: '#E3F2FD' }}>{gift.category}</span>
