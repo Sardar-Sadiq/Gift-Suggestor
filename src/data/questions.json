@@ -1,54 +1,54 @@
 [
     {
-        "id": "relationship",
-        "question": "Who is this gift for?",
+        "id": "recipient",
+        "question": "Who is the lucky person? 🎯",
         "options": [
             {
-                "label": "Partner / Spouse ❤️",
-                "value": "partner"
+                "label": "A Boy / Man 🧔‍♂️",
+                "value": "male"
             },
             {
-                "label": "Crush / New Date ✨",
-                "value": "crush"
+                "label": "A Girl / Woman 👩‍💼",
+                "value": "female"
             },
             {
-                "label": "Friend / Bestie 👯",
-                "value": "friend"
+                "label": "A Child 🧸",
+                "value": "child"
             },
             {
-                "label": "Self Love / Me 🧘",
+                "label": "Myself (Self-Love) ✨",
                 "value": "self"
             }
         ]
     },
     {
         "id": "occasion",
-        "question": "What's the special event?",
+        "question": "What's the reason to celebrate? 🎉",
         "options": [
             {
-                "label": "Valentine's Week (Lovers Week)",
-                "value": "lovers-week"
+                "label": "Valentine's / Lovers Week",
+                "value": "valentine"
             },
             {
-                "label": "Anniversary / Birthday",
+                "label": "Birthday Bash",
+                "value": "birthday"
+            },
+            {
+                "label": "Anniversary / Promise",
                 "value": "anniversary"
             },
             {
-                "label": "Proposal / Propose Day",
-                "value": "propose-day"
-            },
-            {
                 "label": "Just Because / Surprise",
-                "value": "just-because"
+                "value": "surprise"
             }
         ]
     },
     {
         "id": "budget",
-        "question": "What's your budget range?",
+        "question": "What's the budget vibe? 💸",
         "options": [
             {
-                "label": "Economical (Under ₹1000)",
+                "label": "Budget-Friendly (Under ₹1000)",
                 "value": "low"
             },
             {
@@ -62,24 +62,50 @@
         ]
     },
     {
-        "id": "personality",
-        "question": "Which vibe describes them best?",
+        "id": "interest",
+        "question": "What gets them excited? ⚡",
         "options": [
             {
-                "label": "Tech-Savvy & Smart",
+                "label": "Tech & Gadgets 💻",
                 "value": "tech"
             },
             {
-                "label": "Deeply Romantic & Sentimental",
+                "label": "Arts & Creativity 🎨",
+                "value": "creative"
+            },
+            {
+                "label": "Gaming & Collectibles 🎮",
+                "value": "gamer"
+            },
+            {
+                "label": "Luxury & Self-Care 💄",
+                "value": "luxury"
+            },
+            {
+                "label": "Books & Knowledge 📚",
+                "value": "reader"
+            }
+        ]
+    },
+    {
+        "id": "vibe",
+        "question": "What's the gift's personality? 🎭",
+        "options": [
+            {
+                "label": "Romantic & Sentimental",
                 "value": "romantic"
             },
             {
-                "label": "Foodie & Sweet Tooth",
-                "value": "foodie"
+                "label": "Practical & Useful",
+                "value": "useful"
             },
             {
-                "label": "Luxury & Minimalist",
-                "value": "luxury"
+                "label": "Fun & Quirky",
+                "value": "fun"
+            },
+            {
+                "label": "Sophisticated & Classy",
+                "value": "classy"
             }
         ]
     }
