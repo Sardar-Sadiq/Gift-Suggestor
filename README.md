@@ -1,4 +1,4 @@
-# 🎁 Giftify AI v2.0 – Cartoon Edition
+# 🎁 Giftify AI
 
 [![Lovers Week Special](https://img.shields.io/badge/February-Lovers%20Week%20Edition-FF6B6B?style=for-the-badge&logo=heartshare&logoColor=white)](https://github.com/Sardar-Sadiq/Gift-Suggestor)
 [![Tech Stack](https://img.shields.io/badge/Stack-React%20%2B%20GSAP-FFD93D?style=for-the-badge)](https://github.com/Sardar-Sadiq/Gift-Suggestor)
