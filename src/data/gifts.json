@@ -1,0 +1,254 @@
+[
+    {
+        "id": 101,
+        "title": "Red Roses & Lilies Bouquet",
+        "description": "A stunning arrangement of premium red roses and oriental lilies in a glass vase.",
+        "category": "Flowers",
+        "budgetRange": "medium",
+        "occasions": [
+            "birthday",
+            "anniversary",
+            "valentine",
+            "lovers-week"
+        ],
+        "personalityTags": [
+            "romantic",
+            "sentimental",
+            "classic"
+        ],
+        "urgencyLevel": "fast",
+        "why": "Nothing says 'I love you' like fresh pink roses and lilies. Perfect for Rose Day.",
+        "platforms": [
+            {
+                "name": "FNP",
+                "price": "₹1,299",
+                "link": "https://www.fnp.com/search?keyword=red+roses+and+lilies+bouquet"
+            },
+            {
+                "name": "Amazon",
+                "price": "₹999",
+                "link": "https://www.amazon.in/s?k=fresh+flower+bouquet+roses+lilies"
+            },
+            {
+                "name": "IGP",
+                "price": "₹1,150",
+                "link": "https://www.igp.com/search?q=red+roses+lilies"
+            }
+        ]
+    },
+    {
+        "id": 102,
+        "title": "Lindt Swiss Gourmet Truffles",
+        "description": "Exquisite assortment of milk, dark, and white chocolate truffles.",
+        "category": "Food & Drink",
+        "budgetRange": "low",
+        "occasions": [
+            "birthday",
+            "holiday",
+            "valentine",
+            "lovers-week"
+        ],
+        "personalityTags": [
+            "foodie",
+            "luxury",
+            "sentimental"
+        ],
+        "urgencyLevel": "fast",
+        "why": "A sweet gesture for Chocolate Day that melts in the mouth and heart.",
+        "platforms": [
+            {
+                "name": "Amazon",
+                "price": "₹1,450",
+                "link": "https://www.amazon.in/s?k=lindt+lindor+truffles"
+            },
+            {
+                "name": "BigBasket",
+                "price": "₹1,399",
+                "link": "https://www.bigbasket.com/ps/?q=lindt+chocolates"
+            },
+            {
+                "name": "Flipkart",
+                "price": "₹1,499",
+                "link": "https://www.flipkart.com/search?q=lindt+lindor"
+            }
+        ]
+    },
+    {
+        "id": 103,
+        "title": "Giant 3ft Teddy Bear",
+        "description": "Ultra-soft plush teddy bear with a heart pillow, perfect for cuddles.",
+        "category": "Personalized",
+        "budgetRange": "medium",
+        "occasions": [
+            "birthday",
+            "valentine",
+            "lovers-week"
+        ],
+        "personalityTags": [
+            "sentimental",
+            "romantic"
+        ],
+        "urgencyLevel": "normal",
+        "why": "The ultimate companion for Teddy Day. Soft, huggable, and memorable.",
+        "platforms": [
+            {
+                "name": "Flipkart",
+                "price": "₹899",
+                "link": "https://www.flipkart.com/search?q=3ft+teddy+bear"
+            },
+            {
+                "name": "Hamleys",
+                "price": "₹1,599",
+                "link": "https://www.hamleys.in/search?q=teddy+bear"
+            },
+            {
+                "name": "Amazon",
+                "price": "₹945",
+                "link": "https://www.amazon.in/s?k=3ft+teddy+bear"
+            }
+        ]
+    },
+    {
+        "id": 104,
+        "title": "Personalized Star Map",
+        "description": "High-quality canvas showing the night sky on the day you first met.",
+        "category": "Personalized",
+        "budgetRange": "medium",
+        "occasions": [
+            "anniversary",
+            "valentine",
+            "propose-day"
+        ],
+        "personalityTags": [
+            "romantic",
+            "creative",
+            "sentimental"
+        ],
+        "urgencyLevel": "normal",
+        "why": "A deep, emotional gift for Propose Day to show they are your universe.",
+        "platforms": [
+            {
+                "name": "Sytara",
+                "price": "₹1,299",
+                "link": "https://sytara.in/product/star-map/"
+            },
+            {
+                "name": "Amazon",
+                "price": "₹650",
+                "link": "https://www.amazon.in/s?k=personalized+star+map"
+            },
+            {
+                "name": "FNP",
+                "price": "₹899",
+                "link": "https://www.fnp.com/search?keyword=star+map"
+            }
+        ]
+    },
+    {
+        "id": 105,
+        "title": "Noise ColorFit Pro 6",
+        "description": "Smartwatch with AMOLED display and AI-powered health monitoring.",
+        "category": "Tech",
+        "budgetRange": "high",
+        "occasions": [
+            "birthday",
+            "valentine",
+            "promise-day"
+        ],
+        "personalityTags": [
+            "tech",
+            "health-conscious",
+            "busy"
+        ],
+        "urgencyLevel": "fast",
+        "why": "A tech-forward way to keep your promise of health and connection.",
+        "platforms": [
+            {
+                "name": "Amazon",
+                "price": "₹3,499",
+                "link": "https://www.amazon.in/s?k=noise+colorfit+pro+6"
+            },
+            {
+                "name": "Flipkart",
+                "price": "₹3,299",
+                "link": "https://www.flipkart.com/search?q=noise+colorfit+pro+6"
+            },
+            {
+                "name": "Noise Store",
+                "price": "₹3,499",
+                "link": "https://www.gonoise.com/search?q=colorfit+pro+6"
+            }
+        ]
+    },
+    {
+        "id": 106,
+        "title": "Swarovski Crystal Earrings",
+        "description": "Elegant rhodium-plated drop earrings with sparkling clear crystals.",
+        "category": "Personalized",
+        "budgetRange": "high",
+        "occasions": [
+            "anniversary",
+            "valentine",
+            "wedding"
+        ],
+        "personalityTags": [
+            "luxury",
+            "romantic",
+            "classic"
+        ],
+        "urgencyLevel": "fast",
+        "why": "Premium sparkle for the most special person in your life on Valentine's Day.",
+        "platforms": [
+            {
+                "name": "Myntra",
+                "price": "₹6,900",
+                "link": "https://www.myntra.com/swarovski"
+            },
+            {
+                "name": "Swarovski",
+                "price": "₹7,500",
+                "link": "https://www.swarovski.com/en-IN/search/?text=earrings"
+            },
+            {
+                "name": "Tata CLiQ",
+                "price": "₹6,900",
+                "link": "https://www.tatacliq.com/search/?text=swarovski+earrings"
+            }
+        ]
+    },
+    {
+        "id": 107,
+        "title": "Apple AirTag (4-Pack)",
+        "description": "Small, elegant tracker for keys, wallets, and bags using the Find My network.",
+        "category": "Tech",
+        "budgetRange": "high",
+        "occasions": [
+            "birthday",
+            "just-because"
+        ],
+        "personalityTags": [
+            "tech",
+            "busy",
+            "minimalist"
+        ],
+        "urgencyLevel": "normal",
+        "why": "Practical and sleek. Perfect for the tech-lover who values organization.",
+        "platforms": [
+            {
+                "name": "Apple",
+                "price": "₹9,900",
+                "link": "https://www.apple.com/in/shop/buy-airtag/airtag/4-pack"
+            },
+            {
+                "name": "Amazon",
+                "price": "₹9,499",
+                "link": "https://www.amazon.in/s?k=apple+airtag+4+pack"
+            },
+            {
+                "name": "Imagine Store",
+                "price": "₹9,900",
+                "link": "https://www.imaginestore.co.in/search?q=airtag+pack+of+4"
+            }
+        ]
+    }
+]

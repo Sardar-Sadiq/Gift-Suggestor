@@ -1,0 +1,86 @@
+[
+    {
+        "id": "relationship",
+        "question": "Who is this gift for?",
+        "options": [
+            {
+                "label": "Partner / Spouse ❤️",
+                "value": "partner"
+            },
+            {
+                "label": "Crush / New Date ✨",
+                "value": "crush"
+            },
+            {
+                "label": "Friend / Bestie 👯",
+                "value": "friend"
+            },
+            {
+                "label": "Self Love / Me 🧘",
+                "value": "self"
+            }
+        ]
+    },
+    {
+        "id": "occasion",
+        "question": "What's the special event?",
+        "options": [
+            {
+                "label": "Valentine's Week (Lovers Week)",
+                "value": "lovers-week"
+            },
+            {
+                "label": "Anniversary / Birthday",
+                "value": "anniversary"
+            },
+            {
+                "label": "Proposal / Propose Day",
+                "value": "propose-day"
+            },
+            {
+                "label": "Just Because / Surprise",
+                "value": "just-because"
+            }
+        ]
+    },
+    {
+        "id": "budget",
+        "question": "What's your budget range?",
+        "options": [
+            {
+                "label": "Economical (Under ₹1000)",
+                "value": "low"
+            },
+            {
+                "label": "Standard (₹1000 - ₹5000)",
+                "value": "medium"
+            },
+            {
+                "label": "Premium (₹5000+)",
+                "value": "high"
+            }
+        ]
+    },
+    {
+        "id": "personality",
+        "question": "Which vibe describes them best?",
+        "options": [
+            {
+                "label": "Tech-Savvy & Smart",
+                "value": "tech"
+            },
+            {
+                "label": "Deeply Romantic & Sentimental",
+                "value": "romantic"
+            },
+            {
+                "label": "Foodie & Sweet Tooth",
+                "value": "foodie"
+            },
+            {
+                "label": "Luxury & Minimalist",
+                "value": "luxury"
+            }
+        ]
+    }
+]
