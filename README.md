@@ -5,6 +5,9 @@
 
 **Giftify AI** is a generative, logic-driven gift suggestor designed to eliminate decision fatigue with style. Built with a vibrant "Cartoon Neubrutalist" aesthetic, it leverages an internal matching engine to recommend perfect presents for boys, girls, and everyone in between.
 
+
+The app uses Rule-Based AI logic (found in src/utils/suggestionEngine.js) to process user data and generate the most personalized gift matches from its curated internal database. This approach ensures high speed and reliability without needing an expensive external API key.
+
 ---
 
 ## ✨ Features
