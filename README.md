@@ -3,17 +3,16 @@
 [![Lovers Week Special](https://img.shields.io/badge/February-Lovers%20Week%20Edition-FF6B6B?style=for-the-badge&logo=heartshare&logoColor=white)](https://github.com/Sardar-Sadiq/Gift-Suggestor)
 [![Tech Stack](https://img.shields.io/badge/Stack-React%20%2B%20GSAP-FFD93D?style=for-the-badge)](https://github.com/Sardar-Sadiq/Gift-Suggestor)
 
-**Giftify AI** is a generative, logic-driven gift suggestor designed to eliminate decision fatigue with style. Built with a vibrant "Cartoon Neubrutalist" aesthetic, it leverages an internal matching engine to recommend perfect presents for boys, girls, and everyone in between.
-
-
-The app uses Rule-Based AI logic (found in src/utils/suggestionEngine.js) to process user data and generate the most personalized gift matches from its curated internal database. This approach ensures high speed and reliability without needing an expensive external API key.
+**Giftify AI** is a personalized, logic-driven gift suggestor designed to eliminate decision fatigue with style. Built with a vibrant "Cartoon Neubrutalist" aesthetic, it leverages a sophisticated internal matching engine to recommend perfect presents for any recipient.
 
 ---
 
 ## ✨ Features
 
-### 🧠 Generative AI Matching Engine
-No more outdated static lists! The app uses a rules-based generative engine to curate suggestions in real-time based on:
+### 🧠 Rule-Based AI Matching Engine
+The app uses **Rule-Based AI logic** (found in `src/utils/suggestionEngine.js`) to process user data and generate the most personalized gift matches from its curated internal database. This approach ensures high speed and reliability without needing an expensive external API key.
+
+No more outdated static lists! The engine curates suggestions in real-time based on:
 - **Recipient Personality** (Techie, Gamer, Artist, Romantic)
 - **Occasion Context** (Lovers Week, Birthdays, Anniversaries)
 - **Vibe Tracking** (Practical vs. Quirky)
@@ -39,7 +38,7 @@ Deeply integrated tracks for Rose Day, Propose Day, Teddy Day, and the big Valen
 - **Framework**: [React](https://reactjs.org/)
 - **Animations**: [GSAP (GreenSock)](https://greensock.com/) & [Lucide React](https://lucide.dev/)
 - **Styling**: Custom CSS3 (Neubrutalist Design System)
-- **Data Architecture**: Logic-driven JSON processing (Generative approach)
+- **Data Architecture**: Rule-Based Scoring & JSON Processing
 
 ---
 
